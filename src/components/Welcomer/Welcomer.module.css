@@ -1,43 +1,36 @@
 .container{
-  background-image: url('../../assets/Landing\ background\ \(Yellow\).png');
+  background-image: url('../../assets/Landing\ background\ \(Yellow\).png         ');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height:115em;
 }
-.grid{
-  display: grid; 
-
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  
-  gap: 0px;
-  height: 100%;
-}
-.mainText{
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 2;
-  grid-column-end: 2;
+.flexContainer{
   display: flex;
-  width: 35.5625rem;
+  justify-content: space-evenly;
+
+}
+.textOdd{
+  
+}
+.flex{
+  display: flex;
+}
+
+.mainText{
+  display: flex;
+  width: 35.5rem;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 1.6875rem;
+  gap: 1.6rem;
 }
+
 .picture{
-  grid-row-start: 1;
-  grid-column-start: 2;
-
-  grid-row-end: 3;
-  grid-column-end: 3;
+ 
 }
-.petsCart{
-
-  grid-row-start: 2;
-  grid-column-start: 1;
-
-  grid-row-end: 3;
-  grid-column-end: 2;
+.buyPets{
+ 
 }
+ .petsCard{
+
+ }
