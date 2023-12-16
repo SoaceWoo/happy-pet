@@ -6,7 +6,8 @@ import Button from "../UI/Button/Button";
 
 import animalsImg from "../../assets/Animals images.png";
 import Card from "../UI/Card/Card";
-
+import CardImageDog from "../../assets/Dog in card.png";
+import CardImageCat from "../../assets/Cat in card.png";
 const Welcomer = () => {
   return (
     <div className={classes.container}>
@@ -30,13 +31,29 @@ const Welcomer = () => {
       </div>
       <div className={`${classes.buyPets} ${classes.flex}`}>
         <div>
-          <Card className={classes.petsCard}>cart with picture</Card>
-          <Card className={classes.petsCard}>cart with picture</Card>
+          <button>button</button>
         </div>
-        <div>two buttons with select pet</div>
-        <div>paginnation</div>
-        <div>Почему выбирают наших друзей,</div>
+        <div className={classes.flex}>
+          <Card>
+            <div className={classes.petsCard}>
+              <a href="#">Собаки</a>
+              <img src={CardImageDog} alt="Dog's img in card" />
+            </div>
+          </Card>
+          <Card>
+            <div className={classes.petsCard}>
+              <a href="#">Кошки</a>
+              <img src={CardImageCat} alt="Cat's img in card" />
+            </div>
+          </Card>
+          <div>
+            <button>button</button>
+          </div>
+        </div>
       </div>
+      <div>two buttons with select pet</div>
+      <div>paginnation</div>
+      <div>Почему выбирают наших друзей,</div>
     </div>
   );
 };

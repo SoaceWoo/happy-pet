@@ -11,7 +11,6 @@
 
 }
 .textOdd{
-  
 }
 .flex{
   display: flex;
@@ -29,8 +28,9 @@
  
 }
 .buyPets{
- 
+  
 }
  .petsCard{
-
+width: 16.9rem;
+height: 17.4rem;
  }
