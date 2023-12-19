@@ -8,6 +8,7 @@ import animalsImg from "../../assets/Animals images.png";
 import Card from "../UI/Card/Card";
 import CardImageDog from "../../assets/Dog in card.png";
 import CardImageCat from "../../assets/Cat in card.png";
+import NextPrevBtn from "../UI/Button/NextPrevBtn";
 const Welcomer = () => {
   return (
     <div className={classes.container}>
@@ -29,28 +30,26 @@ const Welcomer = () => {
           <img src={animalsImg} alt="" />
         </div>
       </div>
-      <div className={`${classes.buyPets} ${classes.flex}`}>
-        <div>
-          <button>button</button>
-        </div>
-        <div className={classes.flex}>
+      <NextPrevBtn>
+        <div className={`${classes.buyPets} ${classes.flex}`}>
           <Card>
             <div className={classes.petsCard}>
-              <a href="#">Собаки</a>
+              <div>
+                <a href="#">Собаки</a>
+              </div>
               <img src={CardImageDog} alt="Dog's img in card" />
             </div>
           </Card>
           <Card>
             <div className={classes.petsCard}>
-              <a href="#">Кошки</a>
+              <div>
+                <a href="#">Кошки</a>
+              </div>
               <img src={CardImageCat} alt="Cat's img in card" />
             </div>
           </Card>
-          <div>
-            <button>button</button>
-          </div>
         </div>
-      </div>
+      </NextPrevBtn>
       <div>two buttons with select pet</div>
       <div>paginnation</div>
       <div>Почему выбирают наших друзей,</div>
