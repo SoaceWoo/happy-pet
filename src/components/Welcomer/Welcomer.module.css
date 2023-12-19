@@ -1,36 +1,48 @@
-.container{
-  background-image: url('../../assets/Landing\ background\ \(Yellow\).png         ');
+.container {
+  background-image: url("../../assets/Landing\ background\ \(Yellow\).png         ");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height:115em;
+  height: 115em;
 }
-.flexContainer{
+.flexContainer {
   display: flex;
   justify-content: space-evenly;
-
+}
+.button__1{
+  pointer-events: none;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  border:none;
+  background: linear-gradient(96deg, #FF3D00 22.15%, #FF004D 72.99%);
+  box-shadow: 0px 9px 30px 0px rgba(255, 31, 37, 0.70);
+}
+.card{
+  padding-left: 5rem;
+}
+.flex {
+  display: flex;
 }
 .textOdd{
+  width: 34rem;
+  height: 7rem;
 }
-.flex{
-  display: flex;
+.picture{
+width: 52rem;
+height: 69.4rem;
 }
-
-.mainText{ 
+.mainText {
   display: flex;
-  width: 35.5rem;
+  width: 35.6rem;
   flex-direction: column;
   justify-content: center;
   gap: 1.6rem;
-}
+} 
 
-.picture{
- 
+.buyPets {
+  margin: 1.9rem;
 }
-.buyPets{
-  margin: 10rem;
+.petsCard {
+  width: 16.9rem;
+  height: 17.4rem;
 }
- .petsCard{
-width: 16.9rem;
-height: 17.4rem;
- }
