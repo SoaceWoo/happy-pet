@@ -2,7 +2,6 @@ import Header from "../Header/Header";
 import classes from "./Welcomer.module.css";
 // import BgImage from "../assets/Landing background (Yellow).png";
 import HeaderText from "../../assets/logo/Text.svg";
-import { Paginator } from "primereact/paginator";
 import animalsImg from "../../assets/Animals images.png";
 import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
@@ -11,11 +10,11 @@ import CardImageCat from "../../assets/Cat in card.png";
 
 const Welcomer = () => {
   return (
-    <div className={classes.container}>
+    <div>
       <div>
         <Header />
       </div>
-      <div className={classes.flexContainer}>
+      <div className={classes.flex}>
         <div className={classes.mainText}>
           <img src={HeaderText} alt="" />
           <span className={classes.textOdd}>
@@ -26,9 +25,7 @@ const Welcomer = () => {
           </span>
 
           <Button>
-            <button className={classes.btn}>
-              <span className={classes.btnText}>Посмотреть друзей</span>
-            </button>
+            <div className={classes.btn}>Посмотреть друзей</div>
           </Button>
         </div>
         <div className={classes.picture}>

@@ -4,7 +4,9 @@ import Welcomer from "./components/Welcomer/Welcomer";
 function App() {
   return (
     <div className="App">
-      <Welcomer />
+      <div className="test">
+        <Welcomer />
+      </div>
     </div>
   );
 }

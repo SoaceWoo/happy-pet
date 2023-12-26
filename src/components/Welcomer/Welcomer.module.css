@@ -1,16 +1,10 @@
-.container {
-  background-image: url("../../assets/Landing\ background\ \(Yellow\).png         ");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 115em;
-}
-.flexContainer {
+.flex {
   display: flex;
-  justify-content: space-evenly;
 }
+ 
+ 
 .img {
-  max-width: 81rem;
+  min-width: 81rem;
   height: auto;
 }
 .btnText {
@@ -28,17 +22,11 @@
 .card {
   padding-left: 5rem;
 }
-.flex {
-  display: flex;
-}
 .textOdd {
   width: 34rem;
   height: 7rem;
 }
-.picture {
-  width: 52rem;
-  height: 69.4rem;
-}
+ 
 .mainText {
   display: flex;
   width: 35.6rem;
