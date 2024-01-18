@@ -1,68 +1,115 @@
+.headerContainer {
+  padding-top: 2.31rem;
+}
+.container {
+  padding-left: 8.44rem;
+}
 .flex {
   display: flex;
 }
-.img {
-  min-width: 81rem;
-  height: auto;
-}
-.mainContent{
+.mainContent {
   flex-direction: column;
   padding-top: 17.9rem;
-
 }
- 
-.paragraph{
-color: #000;
-width: 23.5rem;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Montserrat;
-font-size: 1.375rem;
-font-style: normal;
-font-weight: 500;
-line-height: 165.4%;
+.paragraph {
+  color: #000;
+  width: 33.44031rem;
+  height: 6.8125rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 178%;
+  line-height: 165.4%;
   text-align: left;
 }
-.petsContainer{
-  padding-top:11.5rem ;
-}
-.btnText {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-.btn {
+.btnContainer {
+  padding-top: 1.6rem;
   width: 19.03525rem;
-  height: 4.1875rem;
 }
 
-.textOdd {
-  width: 34rem;
-  height: 7rem;
+.btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  height: 4.1875rem;
+  font-weight: bolder;
 }
-  
+.textOdd {
+  padding-top: 1.69rem;
+}
 .mainText {
-  display: flex;
-  width: 35.6rem;
   flex-direction: column;
 }
 
-.buyPets {
-  margin: 1.9rem;
+.petCard {
+  padding-top: 8.44rem;
 }
-.petsCard {
+.cat {
+  padding-left: 1.88rem;
+}
+.svg {
+  width: 1.15625rem;
+  height: 1rem;
+}
+.card {
   width: 16.875rem;
   height: 17.4375rem;
 }
-.petsContent {
-  font-weight: bold;
-  padding-left: 1.97rem;
-  padding-top: 1.63rem;
+
+.petContent {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-weight: 900;
 }
 .cardImg {
-  padding-top: 2.7rem;
-  padding-left: 4.75rem;
-  padding-right: 3.94rem;
+  padding-top: 4.25rem;
+  padding-left: 1.62rem;
+
+  /* width: 13.3125rem;
+  height: 11.25rem; */
+}
+
+.slideBtns{
+  padding-top: 16.06rem;
+  
+}
+.paginationContainer {
+  padding-top: 2.25rem;
+  justify-content: center;
+}
+ .circle {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+}
+.pagination {
+  padding-right: 1rem;
+}
+.picture{
+  height: 87rem;
+  width: 69rem;
+}
+.img{
+  max-width: 100%;
+  max-height:100% ;
+}
+.titleSection{
+  padding-left: 8.12rem;
+  flex-direction: column;
+}
+.titleSectionContainer{
+  padding-top: 4.31rem;
+
+}
+.whyWe{
+  width: 29.9375rem;
+}
+.whyWeContainer{
+  width: 22.25rem;
+  height: 4.3125rem;
+}
+.whyWeIcon{
+  width: 100%;
+  height: 100%;
 }

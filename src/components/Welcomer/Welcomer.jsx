@@ -1,21 +1,22 @@
-import Header from "../Header/Header";
 import classes from "./Welcomer.module.css";
-// import BgImage from "../assets/Landing background (Yellow).png";
-import HeaderText from "../../assets/logo/Text.svg";
-import animalsImg from "../../assets/Animals images.png";
+import Header from "../Header/Header";
 import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
+import { NextBtn, PrevBtn } from "../UI/NxtPrev/NextPrv";
+import HeaderText from "../../assets/logo/Text.svg";
+
+import animalsImg from "../../assets/Animals images.png";
 import CardImageDog from "../../assets/Dog in card.png";
 import CardImageCat from "../../assets/Cat in card.png";
 
 const Welcomer = () => {
   return (
-    <div>
+    <div className={classes.headerContainer}>
       <div>
         <Header />
       </div>
 
-      <div className={classes.flex}>
+      <div className={`${classes.flex} ${classes.container}`}>
         <div className={`${classes.flex} ${classes.mainContent}`}>
           <div className={`${classes.mainText} ${classes.flex}`}>
             <img src={HeaderText} alt="" />
@@ -25,73 +26,111 @@ const Welcomer = () => {
                 выходить из дома
               </p>
             </div>
-            <Button>
-              <div className={classes.btn}>Посмотреть друзей</div>
-            </Button>
-          </div>
-
-          <div className={`${classes.flex} ${classes.petsContainer}`}>
-            <div className={classes.petsCard}>
-              <Card>
-                <div className={`${classes.petsContent} ${classes.flex}`}>
-                  <ul>
-                    <li>Собаки</li>
-                  </ul>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    data-slot="icon"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </div>
-                <div className={classes.cardImg}>
-                  <img src={CardImageDog} alt="Dog's img in card" />
-                </div>
-              </Card>
-            </div>
-            <div className={classes.petsCard}>
-              <Card>
-                <div className={`${classes.petsContent} ${classes.flex}`}>
-                  <ul>
-                    <li>Кошки</li>
-                  </ul>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    data-slot="icon"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </div>
-                <div className={classes.cardImg}>
-                  <img src={CardImageCat} alt="Cat's img in card" />
-                </div>
-              </Card>
+            <div className={classes.btnContainer}>
+              <Button>
+                <button className={classes.btn}>Посмотреть друзей</button>
+              </Button>
             </div>
           </div>
 
-          <div>two buttons with select pet</div>
-          <div></div>
-          <div>Почему выбирают наших друзей,</div>
+          <div className={classes.flex}>
+            <div className={`${classes.petCard} ${classes.flex}`}>
+              <div className={classes.slideBtns}>
+                <PrevBtn />
+              </div>
+              <Card>
+                <div className={classes.card}>
+                  <div className={classes.petContent}>
+                    Собаки
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      className={classes.svg}
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </div>
+                  <div className={classes.cardImg}>
+                    <img src={CardImageDog} alt="Dog's img in card" />
+                  </div>
+                </div>
+              </Card>
+            </div>
+            <div
+              className={`${classes.petCard} ${classes.cat} ${classes.flex}`}
+            >
+              <Card>
+                <div className={classes.card}>
+                  <div className={classes.petContent}>
+                    Кошки
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      className={classes.svg}
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </div>
+                  <div className={classes.cardImg}>
+                    <img src={CardImageCat} alt="Dog's img in card" />
+                  </div>
+                </div>
+              </Card>
+              <div className={classes.slideBtns}>
+                <NextBtn />
+              </div>
+            </div>
+          </div>
+          <div className={`${classes.paginationContainer} ${classes.flex}`}>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+            <a className={classes.pagination} href="#">
+              <div className={classes.circle}></div>
+            </a>
+          </div>
         </div>
-
         <div className={classes.picture}>
           <img src={animalsImg} className={classes.img} alt="" />
         </div>
