@@ -1,1 +1,91 @@
-.container{}
+.container{
+  padding-left: 8.65rem;
+}
+.headerTitle{
+  justify-content: start;
+}
+.flex{
+  display: flex;
+}
+.cardImg img{
+  width: 20.5625rem;
+  height: 17.95822rem;
+}
+.card{
+  padding-right: 1.94rem;
+  padding-top: 2.94rem;
+}
+.btn{
+  margin-left: 1.25rem;
+  width: 7.625rem;
+  height: 2.375rem;
+  border:none;
+  border-radius: 1.25rem;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.cardContent{
+  padding: 0  1.25rem;
+  width: 23.0625rem;
+  height: 30.77069rem;
+}
+.title{
+  text-align: left;
+}
+.title span{
+  color: #000;
+font-size: 1.375rem;
+font-style: normal;
+font-weight: 700;
+line-height: 115.5%;
+}
+.title p{
+  color: #000;
+font-family: Montserrat;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 115.5%; 
+width: 20.56rem;
+letter-spacing: 2px;
+}
+.category{
+  align-items: center;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.5%; 
+}
+.circle {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.pagination {
+  padding: 1rem;
+}
+.price{
+  color: #00BD40;
+  text-align: left;
+font-family: Montserrat;
+font-size: 1.375rem;
+font-style: normal;
+font-weight: 500;
+line-height: 115.5%; /* 1.58813rem */
+}
+.priceWithButton{
+  align-items: center;
+  justify-content: space-between;
+
+}
+.buyButton{
+width: 7.1rem;
+height: 1.9rem;
+background-color: transparent;
+color: white;
+border: none;
+font-weight: bolder;
+}

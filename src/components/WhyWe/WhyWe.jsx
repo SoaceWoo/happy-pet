@@ -4,10 +4,12 @@ import SectionTitle from "../.././assets/logo/Section title.svg";
 import WhyWeFirst from "../.././assets/logo/Why we section itemFirst Title.svg";
 import WhyWeSecond from "../.././assets/logo/Why we section itemSecond Title.svg";
 import WhyWeThird from "../.././assets/logo/Why we section itemThird Title.svg";
+import YellowBackgroundGreen from "../../assets/Title Section Background.png";
+import React from "react";
 
 const WhyWe = () => {
   return (
-    <div className={classes.test}>
+    <React.Fragment>
       <div className={`${classes.titleSection} ${classes.flex}`}>
         <img className={classes.whyWe} src={SectionTitle} alt="" />
         <div className={`${classes.flex} ${classes.titleSectionContainer}`}>
@@ -22,7 +24,11 @@ const WhyWe = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div className={classes.test1}>
+        <div className={classes.img}></div>
+        {/* <img className={classes.img} src={YellowBackgroundGreen} alt="" /> */}
+      </div>
+    </React.Fragment>
   );
 };
 export default WhyWe;

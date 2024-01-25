@@ -9,9 +9,7 @@ function App() {
       <div className="test">
         <Welcomer />
       </div>
-      <div className="test1">
-        <WhyWe />
-      </div>
+      <WhyWe />
       <div className="test2">
         <ChooseYourFriend />
       </div>
