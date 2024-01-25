@@ -76,13 +76,9 @@
 .paginationContainer {
   padding-top: 2.25rem;
   justify-content: center;
+  
 }
- .circle {
-  width: 0.875rem;
-  height: 0.875rem;
-  border-radius: 100%;
-  background-color: #d9d9d9;
-}
+ 
 .pagination {
   padding-right: 1rem;
 }
