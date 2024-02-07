@@ -24,15 +24,9 @@
 .btnContainer {
   padding-top: 1.6rem;
   width: 19.03525rem;
+  height: 4.90rem;
 }
 
-.btn {
-  background-color: transparent;
-  color: white;
-  border: none;
-  height: 4.1875rem;
-  font-weight: bolder;
-}
 .textOdd {
   padding-top: 1.69rem;
 }

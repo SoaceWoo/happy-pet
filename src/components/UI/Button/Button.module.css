@@ -1,7 +1,11 @@
 .button{
-  color: #ffffff;
-  border-radius: 0.625rem;
   border:none;
   background: linear-gradient(96deg, #FF3D00 22.15%, #FF004D 72.99%);
+  border-radius: 0.625rem;
+  width: 100%;
   box-shadow: 0px 9px 30px 0px rgba(255, 31, 37, 0.70);
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
 }

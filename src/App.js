@@ -3,6 +3,7 @@ import Welcomer from "./components/Welcomer/Welcomer";
 import ChooseYourFriend from "./components/ChooseYourFriend/ChooseYourFriend";
 import WhyWe from "./components/WhyWe/WhyWe";
 import WeLovePlay from "./components/WeLovePlay/WhyLovePlay";
+import AboutUs from "./components/About Us/AboutUs";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div className="test3">
         <WeLovePlay />
+      </div>
+      <div>
+        <AboutUs />
       </div>
     </div>
   );

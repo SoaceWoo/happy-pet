@@ -28,9 +28,7 @@ const Welcomer = () => {
               </p>
             </div>
             <div className={classes.btnContainer}>
-              <Button>
-                <button className={classes.btn}>Посмотреть друзей</button>
-              </Button>
+              <Button>Посмотреть друзей</Button>
             </div>
           </div>
 
